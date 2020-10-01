@@ -21,5 +21,3 @@ RUN apt-get -yqq update \
 && ./configure \
 && make -j4 \
 && make install
-
-ENTRYPOINT ["/usr/local/sbin/pure-ftpd &"]

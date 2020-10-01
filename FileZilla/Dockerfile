@@ -71,6 +71,3 @@ RUN svn co https://svn.filezilla-project.org/svn/FileZilla3/trunk filezilla \
 && ./configure \
 && make -j8 \
 && make install
-
-
-ENTRYPOINT [~/Documents/Tarea_2_Taller/fileZilla/ElFile]
