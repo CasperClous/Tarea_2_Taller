@@ -22,7 +22,7 @@ RUN apt-get -y install apt-utils \
 && apt-get -y install wget \
 && apt-get -y install curl \
 && apt-get -y install libgnutls30 \
-&& apt-get -y install cmake
+&& apt-get -y install xdg-utils
 
 
 #GnuTLS
@@ -36,10 +36,10 @@ RUN wget ftp://ftp.gnutls.org/gcrypt/gnutls/v3.6/gnutls-3.6.15.tar.xz \
 
 
 #wxWidgets
-RUN wget https://github.com/wxWidgets/wxWidgets/releases/download/v3.1.4/wxWidgets-3.1.4.tar.bz2 \
-&& tar xvf wxWidgets-3.1.4.tar.bz2 \
-&& rm -r wxWidgets-3.1.4.tar.bz2 \
-&& cd wxWidgets-3.1.4 \
+RUN wget https://github.com/wxWidgets/wxWidgets/releases/download/v3.0.5/wxWidgets-3.0.5.tar.bz2 \
+&& tar xvf wxWidgets-3.0.5.tar.bz2 \
+&& rm -r wxWidgets-3.0.5.tar.bz2 \
+&& cd wxWidgets-3.0.5 \
 && ./configure \
 && make -j8 \
 && make install 
@@ -54,13 +54,23 @@ RUN apt-get install -y libdbus-cpp-dev
 #perl
 RUN apt-get install -y perl
 
+
+#Libfilezilla
+RUN svn co https://svn.filezilla-project.org/svn/libfilezilla/trunk \
+&& cd trunk \
+&& autoreconf -vfi \
+&& ./configure \
+&& make -j8 \
+&& make install
+
+
 #El FileZilla de por si
-RUN wget https://dl1.cdn.filezilla-project.org/client/FileZilla_3.50.0_x86_64-linux-gnu.tar.bz2 \
-&& cd filezilla-3.50.0 \
-RUN autoreconf -i
-RUN ./configure 
-RUN make -j8
-RUN make install
+RUN svn co https://svn.filezilla-project.org/svn/FileZilla3/trunk filezilla \
+&& cd filezilla \
+&& autoreconf -vfi \
+&& ./configure \
+&& make -j8 \
+&& make install
 
 
 ENTRYPOINT [~/Documents/Tarea_2_Taller/fileZilla/ElFile]
