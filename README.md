@@ -1,5 +1,5 @@
 # Pure-FTPd & FileZilla Client Dockerfiles
-Este proyecto consiste en la creacion de dockerfiles para un Pure-FTPd server y un FileZilla Client, los cuales se asocian al protocolo FTP, para que ambos puedan generar trafico entre si.
+Este proyecto consiste en la creacion de dockerfiles para Pure-FTPd server y FileZilla Client, los cuales se asocian al protocolo FTP, para que ambos puedan generar trafico entre si.
 ## Instalacion
 Como prerequistos, se encuentran la necesidad de tener instalados Docker y Git:
 
