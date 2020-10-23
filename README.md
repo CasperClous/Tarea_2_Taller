@@ -30,6 +30,6 @@ Luego de la conexión entre Pure-FTPd server y FileZilla Client, se puede utiliz
 
 ## Video 2 - (Utilizando Polymorph):
 
-[![Video para tarea3!](https://1.bp.blogspot.com/-vn5etah3lqU/WuIBtO62BhI/AAAAAAAAr3U/x5C0B9gWX_cL2WMEBH09k3Hb5xiZo0G0QCLcBGAs/s1600/Poly00.jpg)](https://youtu.be/UEybiL0i-uM)
+[![Video para tarea3!](https://4.bp.blogspot.com/-txZlW0a0wD8/WuH9KusnL5I/AAAAAAAAr2Q/2X8-Sg_eS5UAxIQ9XM_hdely0mV0IwpdQCLcBGAs/s1600/imagen1.png)](https://youtu.be/UEybiL0i-uM)
 
 https://www.youtube.com/watch?v=UEybiL0i-uM
