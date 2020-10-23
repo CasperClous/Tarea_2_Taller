@@ -18,6 +18,11 @@ RUN apt-get -yqq update \
 && aclocal \
 && autoreconf -vfi \
 && automake -a \
-&& ./configure \
+&& ./configure --with-everything \
 && make -j4 \
 && make install
+RUN /usr/local/sbin/pure-ftpd &
+
+RUN groupadd -g 1000 ftp && useradd -d /home/ftp -s /bin/bash -m ftp -u 1000 -g 1000
+USER ftp
+ENV HOME /home/ftp
