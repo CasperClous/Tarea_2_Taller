@@ -17,7 +17,7 @@ $ docker build -t filezilla:final
 ```
 Para el cliente, el host es ftp://localhost
 
-## Video 1 (Montaje dockerfiles y conexión server-client):
+## Video 1 - (Montaje dockerfiles y conexión server-client):
 https://www.youtube.com/watch?v=7y6xFn3h1KI
 
 ## Polymorph
@@ -25,4 +25,4 @@ Luego de la conexión entre Pure-FTPd server y FileZilla Client, se puede utiliz
 
 -Polymorph: https://github.com/shramos/polymorph
 
-## Video 2 (Utilizando Polymorph):
+## Video 2 - (Utilizando Polymorph):
