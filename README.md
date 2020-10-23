@@ -21,9 +21,8 @@ Para el cliente, el host es ftp://localhost
 
 [Video1](https://youtu.be/7y6xFn3h1KI)
 
-<iframe width="900" height="506" src="https://www.youtube.com/embed/7y6xFn3h1KI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-https://www.youtube.com/watch?v=7y6xFn3h1KI
+<a href="https://youtu.be/7y6xFn3h1KI" target="_blank"><img src="https://img.youtube.com/vi/7y6xFn3h1KI/maxresdefault.jpg" 
+alt="IMAGE ALT TEXT HERE" width="400" height="225"/></a>
 
 ## Polymorph
 Luego de la conexión entre Pure-FTPd server y FileZilla Client, se puede utilizar el framework Polymorph para interceptar, capturar y modificar tráfico entre estos, a continuación se deja enlace a esta herramienta y demostración de uso:
@@ -34,4 +33,5 @@ Luego de la conexión entre Pure-FTPd server y FileZilla Client, se puede utiliz
 
 [Video2](https://youtu.be/UEybiL0i-uM)
 
-https://www.youtube.com/watch?v=UEybiL0i-uM
+<a href="https://youtu.be/UEybiL0i-uM" target="_blank"><img src="https://img.youtube.com/vi/UEybiL0i-uM/maxresdefault.jpg" 
+alt="IMAGE ALT TEXT HERE" width="400" height="225"/></a>
