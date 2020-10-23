@@ -1,7 +1,7 @@
 # Pure-FTPd & FileZilla Client Dockerfiles
-Este proyecto consiste en la creacion de dockerfiles para Pure-FTPd server y FileZilla Client, los cuales se asocian al protocolo FTP, para que ambos puedan generar trafico entre si.
-## Instalacion
-Como prerequistos, se encuentran la necesidad de tener instalados Docker y Git:
+Este proyecto consiste en la creación de dockerfiles para Pure-FTPd server y FileZilla Client, los cuales se asocian al protocolo FTP, para que ambos puedan generar tráfico entre sí.
+## Instalación
+Como prerrequisitos, se encuentran la necesidad de tener instalados Docker y Git:
 
 -Docker: https://docs.docker.com/engine/install/
 
@@ -17,11 +17,11 @@ $ docker build -t filezilla:final
 ```
 Para el cliente, el host es ftp://localhost
 
-## Video 1 (Montaje dockerfiles y conexion server-client):
+## Video 1 (Montaje dockerfiles y conexión server-client):
 https://www.youtube.com/watch?v=7y6xFn3h1KI
 
 ## Polymorph
-Luego de la conexion entre Pure-FTPd server y FileZilla Client, se puede utilizar el framework Polymorph para interceptar, capturar y modificar trafico entre estos, a continuacion se deja enlace a esta herramienta y demostracion de uso:
+Luego de la conexión entre Pure-FTPd server y FileZilla Client, se puede utilizar el framework Polymorph para interceptar, capturar y modificar tráfico entre estos, a continuación se deja enlace a esta herramienta y demostración de uso:
 
 -Polymorph: https://github.com/shramos/polymorph
 
