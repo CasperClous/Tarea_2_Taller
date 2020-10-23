@@ -9,16 +9,17 @@ Como prerrequisitos, se encuentran la necesidad de tener instalados Docker y Git
 
 **Server:**
 ```
-$ docker build -t pure-ftpd:final
+$ docker build . -t pure-ftpd:final
 ```
 **Client:**
 ```
-$ docker build -t filezilla:final
+$ docker build . -t filezilla:final
 ```
 Para el cliente, el host es ftp://localhost
 
 ## Video 1 - (Montaje dockerfiles y conexión server-client):
 https://www.youtube.com/watch?v=7y6xFn3h1KI
+
 
 ## Polymorph
 Luego de la conexión entre Pure-FTPd server y FileZilla Client, se puede utilizar el framework Polymorph para interceptar, capturar y modificar tráfico entre estos, a continuación se deja enlace a esta herramienta y demostración de uso:
@@ -26,3 +27,4 @@ Luego de la conexión entre Pure-FTPd server y FileZilla Client, se puede utiliz
 -Polymorph: https://github.com/shramos/polymorph
 
 ## Video 2 - (Utilizando Polymorph):
+https://www.youtube.com/watch?v=UEybiL0i-uM
