@@ -19,7 +19,7 @@ Para el cliente, el host es ftp://localhost
 
 ## Video 1 - (Montaje dockerfiles y conexión server-client):
 
-[![Video para tarea2!](https://s3-us-west-2.amazonaws.com/devcodepro/media/tutorials/instalar-filezilla-para-conectarse-a-un-servidor-ftp-t1.png)](https://youtu.be/7y6xFn3h1KI)
+[Video1](https://youtu.be/7y6xFn3h1KI)
 
 https://www.youtube.com/watch?v=7y6xFn3h1KI
 
@@ -30,6 +30,6 @@ Luego de la conexión entre Pure-FTPd server y FileZilla Client, se puede utiliz
 
 ## Video 2 - (Utilizando Polymorph):
 
-[![Video para tarea3!](https://4.bp.blogspot.com/-txZlW0a0wD8/WuH9KusnL5I/AAAAAAAAr2Q/2X8-Sg_eS5UAxIQ9XM_hdely0mV0IwpdQCLcBGAs/s1600/imagen1.png)](https://youtu.be/UEybiL0i-uM)
+[Video2](https://youtu.be/UEybiL0i-uM)
 
 https://www.youtube.com/watch?v=UEybiL0i-uM
