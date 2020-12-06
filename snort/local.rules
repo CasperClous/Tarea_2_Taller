@@ -1,0 +1,21 @@
+# $Id: local.rules,v 1.11 2004/07/23 20:15:44 bmc Exp $
+# ----------------
+# LOCAL RULES
+# ----------------
+alert tcp any any -> $HOME_NET 21 (msg:"Posible ataque fuerza bruta a FTP"; flow:to_server; content:"pass 123456"; nocase; sid:1)
+alert tcp any any -> $HOME_NET 21 (msg:"Posible ataque fuerza bruta a FTP"; flow:to_server; content:"pass password"; nocase; sid:2)
+alert tcp any any -> $HOME_NET 21 (msg:"Posible ataque fuerza bruta a FTP"; flow:to_server; content:"pass 123456789"; nocase; sid:3)
+alert tcp any any -> $HOME_NET 21 (msg:"Posible ataque fuerza bruta a FTP"; flow:to_server; content:"pass 12345"; nocase; sid:4)
+alert tcp any any -> $HOME_NET 21 (msg:"Posible ataque fuerza bruta a FTP"; flow:to_server; content:"pass 12345678"; nocase; sid:5)
+alert tcp any any -> $HOME_NET 21 (msg:"Posible ataque fuerza bruta a FTP"; flow:to_server; content:"pass qwerty"; nocase; sid:6)
+alert tcp any any -> $HOME_NET 21 (msg:"Posible ataque fuerza bruta a FTP"; flow:to_server; content:"pass 1234567"; nocase; sid:7)
+alert tcp any any -> $HOME_NET 21 (msg:"Posible ataque fuerza bruta a FTP"; flow:to_server; content:"pass 111111"; nocase; sid:8)
+alert tcp any any -> $HOME_NET 21 (msg:"Posible ataque fuerza bruta a FTP"; flow:to_server; content:"pass 1234567890"; nocase; sid:9)
+alert tcp any any -> $HOME_NET 21 (msg:"Posible ataque fuerza bruta a FTP"; flow:to_server; content:"pass 123123"; nocase; sid:10)
+activate tcp any any -> $HOME_NET 21 (msg:"Posible SYN Scan"; flags:S ; activates:1; sid:11)
+dynamic tcp any any -> $HOME_NET 21 (activated_by:1; count:3; sid:12)
+alert tcp any any -> $HOME_NET 21 (msg:"Intento de root"; content: "CWD"; pcre: "/^CWD [\/]{0,}(root|bin|etc|logs|sys|var)/smi"; sid:14)
+alert tcp any any -> $HOME_NET 21 (msg:"Intento de root2"; content: "CWD"; distance:0 ; pcre: "/[\/]{0,}(root|bin|etc|logs|sys|var)/smi"; sid:15)
+alert tcp any any -> $HOME_NET 21 (msg:"CD OverFlow"; content: "CWD"; dsize:>150; sid:16)
+# This file intentionally does not come with signatures.  Put your local
+# additions here.
